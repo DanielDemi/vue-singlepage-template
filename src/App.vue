@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/images/logo.png">
-    <router-view/>
+    <h>hello</h>
   </div>
 </template>
-
 <script>
-export default {
-  name: 'App',
-  data() {
-    return {}
-  },
-  created() {
+  import skinJson from '../static/skin.json';
+  export default {
+    name: 'app',
+    watch: {
+      '$route': function (to, from) {
+        this.defaultActive = to.path;
+      }
+    },
+    data() {
+      return {
+        defaultActive: 'vehicleStatistics',
+        hasNoSidebar: true
+      };
+    },
+    created() {
       const skin = skinJson.default;
       this.renderSkin(skin, skinJson.packages, '/gbac/web');
     },
@@ -55,16 +62,43 @@ export default {
         }
       }
     }
-}
+  };
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="less" scoped>
+  @import 'assets/styles/variable';
+  @import 'assets/styles/reset.css';
+  @import 'assets/styles/hui-reset.css';
+  @import 'assets/styles/common.css';
+
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    width: 100%;
+    background-color: #e8ebf5;
+    position: relative;
+    overflow: hidden;
+    .sidebar {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      width: 200px;
+      min-height: 616px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      position: absolute;
+      top: 0px;
+      left: 200px;
+      right: 0px;
+      bottom: 0px;
+      border-radius: 5px;
+      &.noSidebar{
+        left: 0px;
+      }
+    }
+  }
 </style>
