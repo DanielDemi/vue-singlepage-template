@@ -1,9 +1,6 @@
 /*
- * @Author: xiangxiao3 
  * @Date: 2017-12-30 13:46:17 
  * @Desc: 多语言文件转换 excel to json
- * @Last Modified by: xiangxiao3
- * @Last Modified time: 2018-01-02 17:05:32
  */
 const xlsx = require('node-xlsx')
 const fs = require('fs')
@@ -30,7 +27,6 @@ function excelToJson(){
 
 /** 
  * javascript comment 
- * @Author: xiangxiao3 
  * @Date: 2018-01-02 15:03:00 
  * @Desc:  获取文件
  */
@@ -42,7 +38,6 @@ function findExcel(){
 }
 /** 
  * javascript comment 
- * @Author: xiangxiao3 
  * @Date: 2018-01-02 15:11:46 
  * @Desc:  验证文件的正确性 并 获取语言对象
  */
@@ -52,7 +47,6 @@ function testExcel(file){
 
 /** 
  * javascript comment 
- * @Author: xiangxiao3 
  * @Date: 2018-01-02 15:29:50 
  * @Desc: excel 数据 转化成 json 数据 
  */
@@ -90,7 +84,6 @@ function transformData(excelData){
 
 /** 
  * javascript comment 
- * @Author: xiangxiao3 
  * @Date: 2018-01-02 15:56:51 
  * @Desc: 扩展语言对象 
  */
@@ -110,8 +103,6 @@ function setData(lang, cellkey, jsonData, value){
 }
 
 /**
- * author:  zhuxiankang
- * data:    2017/11/27
  * desc:    空对象监测并赋值（空值）
  */
 function setObjValue(obj, keys, value){
@@ -131,7 +122,6 @@ function createJson(){
 
 }
 /**
- * author:  zhuxiankang
  * data:    2017/11/25
  * desc:    删除用户文件夹以及文件夹下的所有文件
  * parm:    req -> http请求对象

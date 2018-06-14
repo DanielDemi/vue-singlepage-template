@@ -7,7 +7,6 @@ class Tools {
   }
 
   /**
-   * @Author: zhuxiankang
    * @Date:   2017-12-14 15:48:41
    * @Desc:   多语言工具初始化
    * @Parm:
@@ -21,7 +20,6 @@ class Tools {
   }
 
   /**
-   * @Author: zhuxiankang
    * @Date:   2017-12-14 15:53:16
    * @Desc:   获取开发态的i18n
    * @Parm:
@@ -40,7 +38,6 @@ class Tools {
   }
 
   /**
-   * @Author: zhuxiankang
    * @Date:   2017-12-14 16:10:08
    * @Desc:   创建i18n静态资源
    * @Parm:
@@ -64,7 +61,6 @@ class Tools {
   }
 
   /**
-   * @Author: zhuxiankang
    * @Date:   2017-12-14 15:43:07
    * @Desc:   删除旧的i18n静态资源
    * @Parm:

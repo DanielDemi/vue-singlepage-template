@@ -1,10 +1,7 @@
 
 /*
- * @Author: xiangxiao3
  * @Date: 2018-01-02 14:50:38
  * @Desc:多语言文件转化 js 转成 excel 文件
- * @Last Modified by: xiangxiao3
- * @Last Modified time: 2018-01-02 14:57:08
  */
 
 const xlsx = require('node-xlsx');
@@ -17,7 +14,6 @@ jsToExcel();
 
 /**
  * javascript comment
- * @Author: xiangxiao3
  * @Date: 2017-12-30 13:59:24
  * @Desc: 初始化
  */
@@ -47,7 +43,6 @@ function jsToExcel() {
 }
 
 /**
- * @Author: zhuxiankang
  * @Date:   2017-12-14 16:10:08
  * @Desc:   创建i18n静态资源
  * @Parm:   val 所有语言信息
@@ -83,7 +78,6 @@ function createI18nExcel(info) {
 
 /**
  * javascript comment
- * @Author: xiangxiao3
  * @Date: 2018-01-02 11:13:53
  * @Desc: 获取sheet页
  */
@@ -105,7 +99,6 @@ function getExcelSheet(sheetData, lang) {
 
 /**
  * javascript comment
- * @Author: xiangxiao3
  * @Date: 2018-01-02 11:11:37
  * @Desc: 获取sheet页的所有行信息
  */
